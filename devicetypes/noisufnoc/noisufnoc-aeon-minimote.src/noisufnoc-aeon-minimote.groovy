@@ -211,7 +211,7 @@ def push4() {
 }
 
 def pushed(button) {
-	sendEvent(name: "button $button", value: "pushed $button", data: [buttonNumber: button, action: "pushed $button"], source: "COMMAND", descriptionText: "$device.displayName button $button was pushed", isStateChange: true)
+	sendEvent(name: "button", value: "pushed", data: [buttonNumber: button, action: "pushed"], source: "COMMAND", descriptionText: "$device.displayName button $button was pushed", isStateChange: true)
 }
 
 def hold1() {
